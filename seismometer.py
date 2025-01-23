@@ -5,8 +5,31 @@
 # webrepl.start()
 from math import sqrt
 from machine import Pin, SoftI2C
-from time import sleep_ms, sleep
+from time import sleep_ms, sleep, time
+import os
 
+# Nom du fichier CSV
+FILENAME = "data.csv"
+
+# Fonction pour vérifier si le fichier existe
+def file_exists(filename):
+    try:
+        with open(filename, 'r'):
+            return True
+    except OSError:
+        return False
+
+# Fonction pour écrire les données dans le fichier CSV
+def log_data(data):
+
+    file_exists_flag = file_exists(FILENAME)
+    with open(FILENAME, 'a') as f:
+        if not file_exists_flag:
+            # timestamp type valeur zone
+            f.write("Timestamp,Mesure,Valeur,Zone\n")
+        f.write(data + "\n")
+    
+    print("Données enregistrées:", data)
 
 def signedIntFromBytes(x, endian="big"):
     y = int.from_bytes(x, endian)
@@ -45,6 +68,13 @@ while True:
     if res > 1:
         res = 1
 
-    print(res)
+    timestamp = time.time_ns()
+    zone = 3
 
-    sleep(1)
+    # Formatage des données pour l'écriture dans le CSV
+    data_line = f"{timestamp},{'séismes'},{res},{zone}"
+
+    # Appel de la fonction pour enregistrer les données
+    log_data(data_line)
+
+    sleep(5)
