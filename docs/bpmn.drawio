@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="6KA_jp1yHGNLlTnpQ9Fs" name="Page-1">
-        <mxGraphModel dx="1433" dy="814" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="992" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -41,23 +41,16 @@
                 <mxCell id="61" value="Conversion valeurs des capteurs en pourcentage" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=script;" parent="16" vertex="1">
                     <mxGeometry x="450" y="20" width="110" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="63" value="" style="edgeStyle=none;html=1;" parent="16" source="62" target="61" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="63" value="" style="edgeStyle=none;html=1;" parent="16" source="61" target="62" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="590" y="90" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="67" value="Exposition du fichier en HTTP" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=script;" vertex="1" parent="16">
+                <mxCell id="67" value="Exposition du fichier en HTTP" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=script;" parent="16" vertex="1">
                     <mxGeometry x="770" y="20" width="100" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="68" value="" style="edgeStyle=none;html=1;endArrow=none;" edge="1" parent="16" source="62" target="67">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="760" y="240" as="sourcePoint"/>
-                        <mxPoint x="940" y="240" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="69" value="" style="edgeStyle=none;html=1;endArrow=none;" edge="1" parent="16" source="61" target="62">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="580" y="240" as="sourcePoint"/>
-                        <mxPoint x="676" y="240" as="targetPoint"/>
-                    </mxGeometry>
+                <mxCell id="81" style="edgeStyle=none;html=1;" edge="1" parent="16" source="62" target="67">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="62" value="Exportation données en CSV" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=script;" parent="16" vertex="1">
                     <mxGeometry x="610" y="20" width="110" height="80" as="geometry"/>
@@ -153,37 +146,37 @@
                 <mxCell id="66" value="&lt;meta charset=&quot;utf-8&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Lecture données humidité et accelérometre&lt;/span&gt;" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=script;" parent="50" vertex="1">
                     <mxGeometry x="160" y="20" width="110" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="70" value="Data scientist" style="swimlane;startSize=20;horizontal=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+                <mxCell id="70" value="Data scientist" style="swimlane;startSize=20;horizontal=0;html=1;whiteSpace=wrap;" parent="1" vertex="1">
                     <mxGeometry y="490" width="1130" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="76" style="edgeStyle=none;html=1;" edge="1" parent="70" source="72" target="73">
+                <mxCell id="76" style="edgeStyle=none;html=1;" parent="70" source="72" target="73" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="72" value="" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=standard;symbol=general;" vertex="1" parent="70">
+                <mxCell id="72" value="" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=standard;symbol=general;" parent="70" vertex="1">
                     <mxGeometry x="60" y="35" width="50" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="79" style="edgeStyle=none;html=1;" edge="1" parent="70" source="73" target="77">
+                <mxCell id="79" style="edgeStyle=none;html=1;" parent="70" source="73" target="77" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="73" value="Importation données CSV" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=script;" vertex="1" parent="70">
+                <mxCell id="73" value="Importation données CSV" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=script;" parent="70" vertex="1">
                     <mxGeometry x="790" y="20" width="100" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="80" style="edgeStyle=none;html=1;" edge="1" parent="70" source="77" target="78">
+                <mxCell id="80" style="edgeStyle=none;html=1;" parent="70" source="77" target="78" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="77" value="..." style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=script;" vertex="1" parent="70">
+                <mxCell id="77" value="..." style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;taskMarker=script;" parent="70" vertex="1">
                     <mxGeometry x="930" y="20" width="100" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="78" value="" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=terminate2;" vertex="1" parent="70">
+                <mxCell id="78" value="" style="points=[[0.145,0.145,0],[0.5,0,0],[0.855,0.145,0],[1,0.5,0],[0.855,0.855,0],[0.5,1,0],[0.145,0.855,0],[0,0.5,0]];shape=mxgraph.bpmn.event;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;align=center;perimeter=ellipsePerimeter;outlineConnect=0;aspect=fixed;outline=end;symbol=terminate2;" parent="70" vertex="1">
                     <mxGeometry x="1070" y="35" width="50" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="74" value="" style="endArrow=blockThin;html=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;dashed=1;dashPattern=8 4;endFill=0;startArrow=oval;startFill=0;endSize=6;startSize=4;" edge="1" parent="1" source="67" target="73">
+                <mxCell id="74" value="" style="endArrow=blockThin;html=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;dashed=1;dashPattern=8 4;endFill=0;startArrow=oval;startFill=0;endSize=6;startSize=4;" parent="1" source="67" target="73" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="550" y="390" as="sourcePoint"/>
                         <mxPoint x="710" y="390" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="75" value="" style="shape=message;html=1;outlineConnect=0;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;spacingRight=5;labelBackgroundColor=#ffffff;" vertex="1" parent="74">
+                <mxCell id="75" value="" style="shape=message;html=1;outlineConnect=0;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;spacingRight=5;labelBackgroundColor=#ffffff;" parent="74" vertex="1">
                     <mxGeometry width="24" height="16" relative="1" as="geometry">
                         <mxPoint x="8" y="-8" as="offset"/>
                     </mxGeometry>
