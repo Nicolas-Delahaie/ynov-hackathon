@@ -68,11 +68,12 @@ while True:
     if res > 1:
         res = 1
 
-    timestamp = time.time_ns()
+    timestamp = time.gmtime()
     zone = 3
+    type = 'séismes'
 
     # Formatage des données pour l'écriture dans le CSV
-    data_line = f"{timestamp},{'séismes'},{res},{zone}"
+    data_line = f"{timestamp},{type},{res},{zone}"
 
     # Appel de la fonction pour enregistrer les données
     log_data(data_line)
