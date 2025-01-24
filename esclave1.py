@@ -11,10 +11,10 @@ wlan.active(True)
 
 # Initialiser ESP-NOW
 espnow = espnow.ESPNow()
-espnow.init()
+espnow.active(True)
 
 # Adresse MAC du maître
-master_mac = b'\xa0\xb7\xe5\xdd\x1e\xa4'  # Remplace par l'adresse MAC réelle
+master_mac = b'\xa0\xb7e\xdd\x1e\xa4'  # Remplace par l'adresse MAC réelle
 espnow.add_peer(master_mac)
 
 # ---- Initialisation du capteur MPU6050 ----
@@ -58,7 +58,7 @@ while True:
             # Envoi des données au maître via ESP-NOW
             print(f"Envoi au maître : {message}")
             try:
-                e.send(master_mac, message.encode('utf-8'))
+                espnow.send(master_mac, message.encode('utf-8'))
                 print("Données envoyées avec succès.")
             except Exception as e:
                 print(f"Erreur lors de l'envoi au maître : {e}")
