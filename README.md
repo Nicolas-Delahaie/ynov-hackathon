@@ -1,1 +1,32 @@
 # ynov-hackathon
+
+## Comment faire fonctionner notre projet ?
+
+### 1 - Configurer les ESP32
+1. Télécharger le driver **'CP210x Universal Windows Driver'** si vous êtes sur Windows :  
+   [Lien de téléchargement](https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads).
+2. Télécharger **Thonny** :  
+   [Lien de téléchargement](https://thonny.org/).
+3. Ouvrir **Thonny**.
+4. Configurer l'interpréteur :
+   - Aller dans **'Exécuter'** dans la barre d'outils.
+   - Cliquer sur **'Configurer l'interpréteur'**.
+   - Sélectionner le type d'interpréteur : **'MicroPython (ESP32)'**.
+   - Sélectionner le bon port : **!!!À compléter!!!**.
+   - Cliquer sur le lien **'Installer ou mettre à jour MicroPython (esptool) (UF2)'**.
+   - Cliquer sur **'OK'**.
+
+### 2 - Injecter le code dans les ESP32
+1. Téléchargez ce projet.
+2. Ouvrir **Thonny** avec l'ESP32 branché et configuré.
+3. Afficher les fichiers sur l'ESP32 :
+   - Aller dans **'Affichage'** dans la barre d'outils.
+   - Cocher **'Fichiers'**.
+   - Vous devriez voir un fichier **'boot.py'** dans votre ESP32.
+4. Ajouter les bons fichiers dans les bons ESP32 : **!!!À compléter!!!**.
+
+### 3 - Branchements
+**!!!À compléter!!!**
+
+### 4 - Lancement
+**!!!À compléter!!!**
