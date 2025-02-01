@@ -1,8 +1,13 @@
 # ynov-hackathon
 
-## Comment faire fonctionner notre projet ?
+## Présentation
 
-### 1 - Configurer les ESP32
+Le but de ce mini projet (2 jours entiers en école) a été de capturer les données de plusieurs capteurs, éparpillés sur plusieurs cartes ESP32. Ces cartes doivent récupérers les informations entre elles, les traduire en pourcentage puis générer un fichier CSV. Ce projet se finalise par une présentation orale de 10 minutes. Les supports sont les suivants :
+
+- [Livrable écrit](https://auvencecom-my.sharepoint.com/:w:/g/personal/nicolas_delahaie_ynov_com/ET_Y2Dug_ypFgVER7NmtvpkBEwD5tL5Eg1HxeWj77scYrA?e=8hKMB4)
+- [Support de présentation orale](https://docs.google.com/presentation/d/1ZGAcrIUciwRXjnxGBufEVFP3JYFAxEAnUVOqkkDy7VM/edit#slide=id.g32844c0cf97_0_250)
+
+## Configuration des ESP32
 
 1. Télécharger le driver **'CP210x Universal Windows Driver'** si vous êtes sur Windows :  
    [Lien de téléchargement](https://www.silabs.com/developer-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads).
@@ -17,7 +22,7 @@
    - Cliquer sur le lien **'Installer ou mettre à jour MicroPython (esptool) (UF2)'**.
    - Cliquer sur **'OK'**.
 
-### 2 - Injecter le code dans les ESP32
+## Injection du code dans les ESP32
 
 1. Téléchargez ce projet.
 2. Ouvrir **Thonny** avec l'ESP32 branché et configuré.
@@ -32,10 +37,6 @@
    - Mettre le fichier **'esclave2.py'** dans l'ESP32 esclave qui embarque le capteur l'accéléromètre.
    - Mettre le fichier **'maitre.py'** dans l'ESP32 maitre qui embarque un capteur accéléromètre et la capteur d'humidité.
 
-### 3 - Branchements
+## Branchements
 
 ![Schéma branchements](./docs/archi_materielle.png)
-
-### 4 - Lancement
-
-**!!!À compléter!!!**
